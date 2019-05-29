@@ -53,6 +53,8 @@ collections:
 resources_name: "resource_room"
 paginate: 12
 
+lsi: true
+
 # Site configuration for Isomer Pages
 ##################################
 

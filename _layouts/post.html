@@ -30,6 +30,15 @@ layout: default
     <div class="row">
       <div class="col is-8 is-offset-2 print-content">
     		{{- content -}}
+        <hr>
+        <h5><b>Related Posts</b></h5>
+        <ul>
+          {% for post in site.related_posts offset:1 limit:5 %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
       {%- include print.html -%}
     </div>
